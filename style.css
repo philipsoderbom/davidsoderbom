@@ -1,0 +1,266 @@
+/*==================GENERAL===========*/
+body, html{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	font-family: 'Ubuntu';
+}
+h1{
+	text-align: center;
+	color: #fff;
+	font-size: 78px;
+	padding-top: 30px;
+}
+h2{
+	text-align: center;
+	font-weight: bold;
+}
+
+/*==============SECTIONS=========*/
+main{
+	height: 100vh;
+	width: 100%;
+	background-color: #000;
+}
+.my-music{
+	height: 180vh;
+	width: 100%;
+	background-color: #1498f0;
+}
+.about-me{
+	height: 100vh;
+	width: 100%;
+	background-color: #000;
+}
+.contact{
+	height: 50vh;
+	width: 100%;
+	background-color: #1498f0;
+}
+footer{
+	height: 200px;
+	width: 100%;
+	background-color: #111;
+}
+
+/*===================FRONT PAGE==============*/
+
+.container-main{
+	display: flex;
+	justify-content: center;
+	height: 450px;
+	width: 100vw;
+	padding-top: 60px;
+}
+.left, .right, .middle{
+	height: 400px;
+	width: 700px;
+}
+
+.container-main-sec{
+	display: flex;
+	justify-content: center;
+	height: 360px;
+}
+button{
+	width: 200px;
+	height: 80px;
+	border: 3px solid #fff;
+	background-color: #1498f0;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 100px;
+	transition: .6s;
+}
+button:hover{
+	background-color: #000;
+	cursor: pointer;
+	transition: .4s cubic-bezier(.76, .13, .23, .94);
+}
+h1#title{
+	font-size: 90px;
+	padding-top: 80px;
+}
+img.left{
+	position: relative;
+	left: 640px;
+}
+img.right{
+	position: relative;
+	right: 640px;
+}
+
+/*=================MENU===========*/
+#sidomeny{
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	background: #fff;
+	left: -300px;
+	top: 0;
+	transition: .6s cubic-bezier(.76, .13, .23, .94);
+	z-index: 2;
+}
+#sidomeny ul a li{
+	list-style: none;
+	color: #000;
+	font-size: 22px;
+	font-weight: 600;
+	padding: 20px 24px;
+}
+#sidomeny ul a li:hover{
+	color: #00529f;
+}
+#sidomeny.active{
+	left: 0;
+}
+#sidomeny .toggle-btn{
+	position: absolute;
+	top: 20px;
+	left: 330px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+.toggle-btn span{
+	width: 50px;
+	height: 4px;
+	background: #fff;
+	display: block;
+	margin-top: 10px;
+	transition: .6s cubic-bezier(.76, .13, .23, .94);
+}
+#sidomeny .toggle-btn.active span:nth-child(2){
+	width: 53px;
+	transition: .6s cubic-bezier(.76, .13, .23, .94);
+	transform: rotate(30deg);
+	border-radius: 4px;
+}
+ul li{
+	list-style: none;
+	margin-top: 22px;
+}
+ul li a{
+	text-decoration: none;
+	color: #000;
+	transition: .6s;
+	font-weight: bold;
+	font-size: 25px;
+}
+ul li a:hover{
+	text-decoration: none;
+	color: #1498f0;
+}
+
+
+
+
+/*===========MUSIC===========*/
+.card-wrapper{
+	width: 100vw;
+	height: 560px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 20px 0;
+}
+.card-wrapper #card1{
+	width: 440px;
+	height: 560px;
+	background-color: #fff;
+	box-shadow: -9px 9px 20px 0px #53514d;
+	transition: .6s;
+margin: 20px 50px;
+}
+.card-wrapper #card2{
+	width: 440px;
+	height: 560px;
+	background-color: #fff;
+	box-shadow: -9px 9px 20px 0px #53514d;
+	transition: .6s;
+	margin: 20px 50px;
+}
+.card-wrapper.img-wrapper{
+	width: 420px;
+	height: 420px;
+}
+.img-wrapper img{
+	height: 440px;
+}
+#card1:hover, #card2:hover{
+	cursor: pointer;
+	transition: .6s;
+	transform: scale(1.05, 1.05);
+}
+img.side-deco-left{
+	position: relative;
+	left: -200px;
+	bottom: 150px;
+	transform: rotate(90deg);
+	z-index: 1;
+}
+img.side-deco-right{
+	position: relative;
+	right: -1100px;
+	transform: rotate(90deg);
+}
+
+
+
+/*===============ABOUT============*/
+
+
+
+/*==============CONTACT===========*/
+
+
+
+/*=============FOOTER=============*/
+
+
+
+/*==============ANIMATIONS===============*/
+@keyframes fadeInZ{
+    0%{
+        opacity: 0;
+        height: 150px;
+        width: 300px;
+        }
+    50%{
+        opacity: 0.3;
+        
+        }
+    100%{
+        opacity: 1;
+        }
+}
+
+
+@keyframes moveInLeft{
+    0%{
+        transform: translateX(-1400px);
+        }
+
+    100%{
+        opacity: 1;
+        }
+}
+
+@keyframes moveInRight{
+    0%{
+        transform: translateX(1400px);
+        }
+
+    100%{
+        opacity: 1;
+        }
+}
+
+img.left{
+    animation: moveInLeft .8s forwards 0s ease-out;
+}
+img.right{
+    animation: moveInRight .8s forwards 0s ease-out;
+}
