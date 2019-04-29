@@ -36,14 +36,12 @@ button{
 	width: 300px;
 	height: 400px;
 	background-color: #fff;
-	box-shadow: -9px 9px 20px 0px #53514d;
 	transition: .6s;
 }
 .card-wrapper #card2{
 	width: 300px;
 	height: 400px;
 	background-color: #fff;
-	box-shadow: -9px 9px 20px 0px #53514d;
 	transition: .6s;
 }
 .card-wrapper.img-wrapper{
@@ -52,5 +50,42 @@ button{
 }
 .img-wrapper img{
 	height: 300px;
+}
+.my-music{
+	height: 200vh;
+}
+main button{
+	margin-top: 40px;
+}
+h2.find-my-music{
+	margin-top: 140px;
+}
+.container-music{
+	margin-top: 40px;
+	height: 200px;
+}
+#card1 h2, #card2 h2{
+	font-size: 15px;
+}
+
+.hidden-info-card-left, .hidden-info-card-right{
+	width: 300px;
+	height: 240px;
+	bottom: 380px;
+	margin-left: -10px;
+}
+.hidden-info-card-left h4, .hidden-info-card-right h4{
+	font-size: 16px;
+}
+.hidden-info-card-left.showInfo, .hidden-info-card-right.showInfo{
+	visibility: visible;
+	transition: .6s;
+	transform: rotateY(0deg);
+	opacity: 1;
+}
+.contact{
+	height: 120vh;
+	width: 100%;
+	background: #1498f0;
 }
 }

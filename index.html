@@ -1,21 +1,29 @@
 <!doctype html>
 <html lang="sv">
   <head>
-    <link rel="shortcut icon" href="img/logoDavidWhite.ico">
+    <link rel="shortcut icon" href="">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,600i,800" rel="stylesheet">   <!--Montserrat-->
-    <link href="https://fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">                     <!--Nova Flat-->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">                <!--Ubuntu-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,600i,800" rel="stylesheet">   <!--Different fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">                   
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">            
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">                
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/sizing.css">
     <title>David Söderbom</title>
   </head>
   <body>
+
+
+<div class="loader">
+    <img src="img/loading.gif" alt="Loading...">
+</div>
+
 
 <!--============MENU========-->
     <div id="sidomeny">
@@ -31,13 +39,18 @@
         <li><a href="#music">My Music</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="exclusive.html">• EXCLUSIVES •</a></li>
       </ul>
+
+      <img src="img/logoDavidBlack.png">
     </div>
 
    
 <!--==========FRONT PAGE============-->
     <main id="home">
+         
         <h1 id="title">David Söderbom</h1>
+        <h3>- Music producer</h3>
         <div class="container-main">
             
             <img class="left" src="img/animation/left.png">
@@ -48,9 +61,16 @@
         </div>
 
         <div class="container-main-sec">
-           <a href="#music"><button>Explore More</button></a>
+           <a href="#music"><button id="callToAction">Listen to My Music</button></a>
+        </div>
+
+        <div class="front-page-img">
+            <img src="img/header.jpg">
         </div>
     </main>
+
+    <div class="background-gradient">
+
 
 
 
@@ -58,8 +78,9 @@
     <section class="my-music" id="music">
         <h1>My Music</h1>
 
-
+        <h2>You can find out more and listen to my two most recent releases right here!</h2> 
         <div class="card-wrapper">
+
             <div id="card1">
                 <div class="img-wrapper" id="left"><img src="img/CoverArt/cominghome.png"></div>
 
@@ -69,17 +90,16 @@
                 </div>
 
                 <div class="hidden-info-card-left">
-                    <p>The very first official song released by David Söderbom</p>
+                    <h4>The very first official song released by David Söderbom</p>
                     <h4>Released: 3 April 2019</h4>
                     <h4>Produced By: David Söderbom and featuring Ryan Field</h4>
-                    <!-- <a href="https://open.spotify.com/album/59Ew8xgPa8J0KONeqRv9aX" target="_blank"><button class="spotify-button">View on Spotify</button></a> -->
                 </div>
             </div>
 
 
             <div id="card2">
-                <div class="img-wrapper" id="right"><img src="img/CoverArt/imnottheone.png"></div>
-                <h2>I'm Not The One</h2>
+                <div class="img-wrapper" id="right"><img src="img/CoverArt/backtoyou.png"></div>
+                <h2>Back To You</h2>
 
                 <div class="card-wrapper-down">
                     <button class="card-button-right">View Details</button>
@@ -89,15 +109,29 @@
                     <p>The follow-up of Coming Home</p>
                     <h4>Released: 22 April 2019</h4>
                     <h4>Produced By: David Söderbom</h4>
-                    <!-- <a href="https://open.spotify.com/album/59Ew8xgPa8J0KONeqRv9aX" target="_blank"><button class="spotify-button">View on Spotify</button></a> -->
-
                 </div>
             </div>
+
+
         </div>
 
+        <div class="play-music">
+            <iframe class="spotify" src="https://open.spotify.com/embed/artist/05QumLL3Z0aJ5Mp7GMRZBe" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
+        <h1 class="exclusives">Take Advantage!</h1>
+        <h2>Access <i style="font-size: 24px;">Special Exclusives</i> right here and nowhere else</h2>
+        <div class="container-form">
+            <a class="exclusive-btn" href="exclusive.html"><button>EXCLUSIVES</button></a>
+        <!-- <form>
+            <input class="contact-form" type="text" name="name-signup" placeholder="Full name" required>
+            <input class="contact-form" type="text" name="email-signup" placeholder="Your email" required>
+            <input class="contact-form" type="text" name="password-signup" placeholder="Create password" required>
+            <a href="exclusive.html"><button name="submit">SIGN UP</button></a>
+        </form> -->
+        </div>
 
         <img class="side-deco-left" src="img/animation/left.png">
-        <img class="side-deco-right" src="img/animation/right.png">
     </section>
 
 
@@ -113,7 +147,8 @@
             </div>
 
             <div class="profile">
-                <img src="img/profile.jpeg">
+                <img src="img/profile.jpg">
+                <h2 style="font-family: 'Nothing You Could Do', cursive; position: relative; bottom: 50px; left: 100px; color: #fff;">David Söderbom</h2>
             </div>
         </div>
     </section>
@@ -122,11 +157,33 @@
 <!--===========CONTACT SECTION============-->
     <section class="contact" id="contact">
         <h1>Contact</h1>
+
+
+        <div class="contact-form-wrapper">
+            <form class="contact-form" action="contact-form-handler.php" method="post">
+                
+                <input class="contact-form" type="text" name="name" placeholder="Full Name" required><br>
+                <input class="contact-form" type="text" name="mail" placeholder="Your Email" required><br>
+                <input class="contact-form" type="text" name="subject" placeholder="Subject" required><br>
+                <textarea class="contact-form" name="message" placeholder="Message" required></textarea><br>
+                <button class="" type="submit" name="submit">SEND MAIL</button>
+            </form>
+        </div>
+
+        <img class="side-deco-right" src="img/animation/right.png">
+
     </section>
+
+
+</div>
 
 <!--============FOOTER=============-->
     <footer>
-        <p style="color: #fff">&copy; D/\P Söderbom</p>
+        
+            <h5>&copy; &reg; 2019 David Söderbom & Philip Söderbom </h5>
+            <p>Website designed and created by Philip Söderbom</p>
+            
+        
     </footer>
 
     <!-- Optional JavaScript -->

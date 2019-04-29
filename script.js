@@ -1,3 +1,4 @@
+/*================Visa/Döls sidomeny=============*/
 const sidomeny = document.getElementById('sidomeny');
 const menyKnapp = document.getElementById('meny-knapp');
 
@@ -49,12 +50,11 @@ showInfoButtonRight.addEventListener('click', function(){
 
 
 
-
+/*============Scrollanimation==========*/
 $(document).ready(function(){
 	$(window).scroll(function(event){
 		var y = $(this).scrollTop();
 		var count = 0;
-
 
 		if (y > 180) {
 			$('.left').addClass('scrollAnimation');
@@ -66,5 +66,58 @@ $(document).ready(function(){
 			$('.right').removeClass('scrollAnimation');
 		}
  	})
+})
+
+
+/*============Rotate profile image=========*/
+const profilePic = document.querySelector('.profile img');
+
+ profilePic.addEventListener('mouseover', function(){
+ 	profilePic.classList.toggle('rotateProfile');
+
+ })
+
+
+/*================Call-to-Action=============*/
+
+const frontPage = document.querySelector('#home');
+const callToAction = document.querySelector('#callToAction');
+
+frontPage.addEventListener('mouseover', function() {
+	setTimeout(seekAttention, 1500);
+})
+
+function seekAttention() {
+	callToAction.classList.toggle('attention');
+}
+
+
+
+
+
+/*=================PlayBar==================*/
+
+$(document).ready(function(){
+	$(window).scroll(function(event){
+		var x = $(this).scrollTop();
+
+		if (x > 1300 && x < 2600) {
+			$('.play-music').addClass('showPlayBar');
+			$('#playBarBtn').addClass('showPlayBar');
+		}
+		else{
+			$('.play-music').removeClass('showPlayBar');
+		}
+		
+ 	})
+})
+
+
+
+/*==============Loader===============*/
+
+window.addEventListener('load', function() {
+	const loader = document.querySelector('.loader');
+	loader.className += ' hidden';
 })
 
