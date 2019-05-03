@@ -15,6 +15,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/exclusive.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
 	<link rel="stylesheet" type="text/css" href="css/sizing.css">
 	<title>David Söderbom</title>
 </head>
@@ -27,17 +28,41 @@
 	<div class="background-gradient">
 
 		<div class="heading">
-			<h2>In order to view the <i>Special Exclusives</i> you will need to <br> <i>share</i> via the embedded Spotify section below</h2>
+			<h2>In order to view the <i>Special Exclusives</i> you will have <br>to successfully complete the Quiz below</h2>
 		</div>
 		
 		<section class="access">
 			
-			<iframe class="spotify" src="https://open.spotify.com/embed/artist/05QumLL3Z0aJ5Mp7GMRZBe" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+			<div id="quizContainer" class="container-quiz">
+				<div id="question" class="question"></div>
+
+				
+				<label class="option"><input type="radio" name="option" value="1"><span id="opt1"></span></label>
+				<label class="option"><input type="radio" name="option" value="2"><span id="opt2"></span></label>
+				<label class="option"><input type="radio" name="option" value="3"><span id="opt3"></span></label>
+				<label class="option"><input type="radio" name="option" value="4"><span id="opt4"></span></label>
+				
+				<div class="container-btn">
+					<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
+				</div>
+			</div>
+
+			<div class="hidden-result">
+				<div id="result" class="container result"></div>
+				<div class="test">
+				<a href="#material"><button id="unlock" onclick="unlockContent();">Unlock</button></a>
+				</div>
+			</div>
 		</section>
 
-		<section class="material">
+		<section id="material" class="material">
 			<div class="locked">
-				<h1>test</h1>
+				<div class="gallery">
+					<a href="img/Gallery/img1.jpg" data-lightbox="mygallery"><img src="img/Gallery/img1sm.jpg"></a>
+					<a href="img/Gallery/img2.jpg" data-lightbox="mygallery"><img src="img/Gallery/img2sm.jpg"></a>
+					<a href="img/Gallery/img3.jpg" data-lightbox="mygallery"><img src="img/Gallery/img3sm.jpg"></a>
+					<a href="img/Gallery/img4.jpg" data-lightbox="mygallery"><img src="img/Gallery/img4sm.jpg"></a>
+				</div>
 			</div>
 		</section>
 
@@ -54,5 +79,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
 	<script type="text/javascript" src="js/script-exclusive.js"></script>
+	<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>

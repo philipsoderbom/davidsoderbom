@@ -70,12 +70,12 @@ $(document).ready(function(){
 
 
 /*============Rotate profile image=========*/
-const profilePic = document.querySelector('.profile img');
+ const profilePic = document.querySelector('.profile img');
 
  profilePic.addEventListener('mouseover', function(){
- 	profilePic.classList.toggle('rotateProfile');
+  	profilePic.classList.toggle('scaleProfile');
 
- })
+  })
 
 
 /*================Call-to-Action=============*/
@@ -111,7 +111,6 @@ $(document).ready(function(){
 		
  	})
 })
-
 
 
 /*==============Loader===============*/

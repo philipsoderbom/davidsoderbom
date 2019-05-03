@@ -86,6 +86,67 @@ h2.find-my-music{
 .contact{
 	height: 120vh;
 	width: 100%;
-	background: #1498f0;
+}
+.profile{
+	width: 400px;
+	height: 400px;
+	margin-left: 50px;
+	margin-top: 55px;
+}
+.profile img{
+	inline-size: 22rem;
+}
+img.left, img.right, img.middle{
+	height: 300px;
+	width: 700px;
+}
+}
+
+
+/*=================Mobile Version============*/
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) { 
+	body, html{
+		overflow-x: hidden;
+	}
+	main{
+	height: 100vh;
+	width: 100%;
+	overflow-x: hidden;
+}
+.my-music{
+	height: 180vh;
+	width: 100%;
+	overflow: hidden;
+}
+.about-me{
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+.contact{
+	height: 80vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+img.side-deco-left, img.side-deco-right{
+	visibility: hidden;
+}
+h1{
+	font-size: 55px;
+	padding-top: 120px;
+}
+.front-page-img img{
+	height: 1000px;
+	width: 1000px;
+}
+.container-main{
+	height: 450px;
+	width: 100vw;
+	padding-top: 60px;
 }
 }

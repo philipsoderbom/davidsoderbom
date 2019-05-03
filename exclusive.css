@@ -1,25 +1,20 @@
 html, body{
 	padding: 0;
 	margin: 0;
-	overflow-y: hidden;
+	height: 280vh;
 }
-
 .background-gradient{
 	background: linear-gradient(#1498f0, #000 30%);
-	height: 200vh;
-	width: 100vw;
 }
-
 section.access{
-	overflow-y: hidden;
 	width: 100vw;
-	height: 70vh;
+	height: 80vh;
 	display: flex;
 	justify-content: center;
 }
 section.material{
 	width: 100vw;
-	height: 130vh;
+	height: 200vh;
 }
 h1{
 	padding: 0;
@@ -59,6 +54,122 @@ iframe.spotify{
 
 
 
-svg{
-	background: red;
+.container-quiz{
+	height: 530px;
+	width: 800px;
+	background: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.container-btn{
+	display: flex;
+	justify-content: center;
+}
+.question{
+	padding: 20px;
+	font-size: 22px;
+	color: #000;
+	height: 80px;
+	width: 760px;
+	display: flex;
+	justify-content: center;
+}
+.option{
+	width: 740px;
+	display: inline-block;
+	padding: 10px 0 10px 15px;
+	vertical-align: middle;
+	margin: 10px;
+	color: #fff;
+	background: #1498f0;
+}
+
+.next-btn{
+	border: none;
+	outline: none;
+	width: 140px;
+	height: 55px;
+	cursor: pointer;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	transition: .6s;
+}
+.next-btn:hover{
+	background: #1bb177;
+	transition: .6s;
+}
+.next-btn:focus{
+	outline: none;
+	border: none;
+}
+
+.result{
+	height: 100px;
+	text-align: center;
+	font-size: 70px;
+	color: #fff;
+}
+input{
+	inline-size: 1.1rem;
+}
+span{
+	padding: 10px;
+	margin-bottom: 40px;
+	vertical-align: middle;
+}
+.selected{
+	background: #000;
+}
+
+.test{
+	display: flex;
+	justify-content: center;
+}
+
+
+.hidden-result{
+	display: flex;
+	justify-content: flex-start;
+	vertical-align: center;
+	flex-direction: column;
+}
+button#unlock{
+	width: 300px;
+	height: 80px;
+	background: #000;
+	color: #fff;
+	font-size: 24px;
+	border: 3px solid #fff;
+	display: none;
+	transition: .4s;
+}
+button#unlock:hover{
+	background: #1498f0;
+	color: #fff;
+	cursor: pointer;
+	transition: .4s;
+}
+a:hover{
+	text-decoration: none;
+}
+.gallery{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 10px 50px;
+}
+
+.gallery img{
+	width: 300px;
+	padding: 15px:;
+	transition: .6s;
+}
+.gallery img:hover{
+	filter: grayscale(100%);
+	transform: scale(1.05);
+	transition: .6s;
 }
