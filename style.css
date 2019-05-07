@@ -23,7 +23,7 @@ h3{
 	color: #fff;
 	font-size: 20px;
 }
-.loader{
+.loadingScreen{
 	position: fixed;
 	z-index: 99;
 	top: 0;
@@ -34,11 +34,13 @@ h3{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 }
-.loader > img{
-	width: 100px;
+.loadingScreen > img{
+	width: 180px;
+	animation: loadingScreen 1s forwards;
 }
-.loader.hidden{
+.loadingScreen.hidden{
 	animation: Loader 1s forwards;
 }
 
@@ -96,9 +98,10 @@ footer{
 .container-main{
 	display: flex;
 	justify-content: center;
-	height: 450px;
-	width: 100vw;
 	padding-top: 60px;
+}
+.container-main img{
+	height: 350px;
 }
 
 img.left, img.right, img.middle{
@@ -171,9 +174,6 @@ img.right{
 #sidomeny ul a li:hover{
 	color: #00529f;
 }
-#sidomeny ul a:hover{
-	text-decoration: underline;
-}
 
 #sidomeny.active{
 	left: 0;
@@ -218,12 +218,6 @@ ul li a:hover{
 	text-decoration: none;
 	color: #1498f0;
 }
-#sidomeny img{
-	height: 80px;
-	position: absolute;
-	bottom: 20px;
-	left: 40px;
-}
 
 
 
@@ -263,7 +257,7 @@ ul li a:hover{
 	height: 420px;
 }
 .img-wrapper img{
-	height: 300px;
+	height: 440px;
 }
 .img-wrapper{
 	transition: 1s;
@@ -542,5 +536,17 @@ img.left.scrollAnimation{
 	100%{
 		opacity: 0;
 		visibility: hidden;
+	}
+}
+@keyframes loadingScreen{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(180deg) scale(1.5);
+	}
+	100%{
+		transform: rotate(0deg) scale(1.0);
+		opacity: 0;
 	}
 }
