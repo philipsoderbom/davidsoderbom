@@ -1,7 +1,7 @@
 <!doctype html>
-<html>
+<html lang="sv">
 <head>
-	<link rel="shortcut icon" href="">
+	<link rel="shortcut icon" href="img/logo/icon.ico">
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,8 +21,8 @@
 </head>
 <body>
 
-	<div class="loader">
-		<img src="img/loading.gif" alt="Loading...">
+	<div class="loadingScreen">
+		<img src="img/logo/davidLogoWhite.png" alt="Loading...">
 	</div>
 
 	<div class="background-gradient">
@@ -49,8 +49,9 @@
 
 			<div class="hidden-result">
 				<div id="result" class="container result"></div>
-				<div class="test">
-				<a href="#material"><button id="unlock" onclick="unlockContent();">Unlock</button></a>
+				<div class="unlock">
+					<a href="#material"><button id="unlock" onclick="unlockContent();">Unlock</button></a>
+					<a href="exclusive.html"><button id="tryAgain">Try Againg</button></a>
 				</div>
 			</div>
 		</section>
@@ -58,27 +59,40 @@
 		<section id="material" class="material">
 			<div class="locked">
 				<div class="gallery">
-					<a href="img/Gallery/img1.jpg" data-lightbox="mygallery"><img src="img/Gallery/img1sm.jpg"></a>
-					<a href="img/Gallery/img2.jpg" data-lightbox="mygallery"><img src="img/Gallery/img2sm.jpg"></a>
-					<a href="img/Gallery/img3.jpg" data-lightbox="mygallery"><img src="img/Gallery/img3sm.jpg"></a>
-					<a href="img/Gallery/img4.jpg" data-lightbox="mygallery"><img src="img/Gallery/img4sm.jpg"></a>
+					<a href="img/Gallery/img1.jpg" data-lightbox="mygallery"><img src="img/Gallery/img1sm.jpg" alt="image"></a>
+					<a href="img/Gallery/img2.jpg" data-lightbox="mygallery"><img src="img/Gallery/img2sm.jpg" alt="image"></a>
+					<a href="img/Gallery/img3.jpg" data-lightbox="mygallery"><img src="img/Gallery/img3sm.jpg" alt="image"></a>
+					<a href="img/Gallery/img4.jpg" data-lightbox="mygallery"><img src="img/Gallery/img4sm.jpg" alt="image"></a>
+					<a href="img/Gallery/img1.jpg" data-lightbox="mygallery"><img src="img/Gallery/img1sm.jpg" alt="image"></a>
+					<a href="img/Gallery/img2.jpg" data-lightbox="mygallery"><img src="img/Gallery/img2sm.jpg" alt="image"></a>
+					<a href="img/Gallery/img3.jpg" data-lightbox="mygallery"><img src="img/Gallery/img3sm.jpg" alt="image"></a>
+					<a href="img/Gallery/img4.jpg" data-lightbox="mygallery"><img src="img/Gallery/img4sm.jpg" alt="image"></a>
 				</div>
+
+
+				<div class="container-video">
+					<video width="800" controls>
+					<source src="img/video/videoplayback.mp4" >
+						<source src="img/video/videoplayback.mp4" >
+							Your browser does not support HTML5 video.
+					</video>
+					</div>
+					</div>
+				</section>
+
 			</div>
-		</section>
-
-	</div>
 
 
 
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, Bootstrap JS, then Anime JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-	<script type="text/javascript" src="js/script-exclusive.js"></script>
-	<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
-</body>
-</html>
+			<!-- Optional JavaScript -->
+			<!-- jQuery first, then Popper.js, Bootstrap JS, then Anime JS -->
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+			<script src="js/script-exclusive.js"></script>
+			<script src="js/lightbox-plus-jquery.min.js"></script>
+		</body>
+		</html>

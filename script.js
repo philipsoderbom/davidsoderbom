@@ -116,7 +116,7 @@ $(document).ready(function(){
 /*==============Loader===============*/
 
 window.addEventListener('load', function() {
-	const loader = document.querySelector('.loader');
+	const loader = document.querySelector('.loadingScreen');
 	loader.className += ' hidden';
 })
 

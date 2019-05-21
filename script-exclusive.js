@@ -1,6 +1,6 @@
 /*=========Loader=============*/
 window.addEventListener('load', function() {
-	const loader = document.querySelector('.loader');
+	const loader = document.querySelector('.loadingScreen');
 	loader.className += ' hidden';
 	
 })
@@ -87,6 +87,7 @@ function loadNextQuestion() {
 		}
 		else{
 			resultCont.textContent = 'Not quite! You got ' + score + '/4';
+			document.querySelector('#tryAgain').style.display = 'block';
 		}
 		return;
 	}
@@ -99,12 +100,11 @@ loadQuestion(currentQuestion);
 
 /*====================================*/
 const material = document.querySelector('.locked');
+const text = document.querySelector('#result');
 function unlockContent() {
 	if (score == 4) {
 		material.classList.remove('locked');
-	}
-	else{
-		alert('You will need to answer all questions correctly')
+		text.remove();
 	}
 }
 

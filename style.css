@@ -38,7 +38,7 @@ h3{
 }
 .loadingScreen > img{
 	width: 180px;
-	animation: loadingScreen 1s forwards;
+	animation: loadingScreen 1.8s infinite;
 }
 .loadingScreen.hidden{
 	animation: Loader 1s forwards;
@@ -312,21 +312,6 @@ ul li a:hover{
 .container-form button{
 	background-color: #1498f0;
 }
-
-img.side-deco-left{
-	position: relative;
-	left: -200px;
-	bottom: 180px;
-	transform: rotate(90deg);
-	z-index: 1;
-}
-img.side-deco-right{
-	position: relative;
-	right: -1600px;
-	bottom: 800px;
-	transform: rotate(90deg);
-	z-index: 1;
-}
 .play-music{
 	position: fixed;
 	right: -280px;
@@ -341,6 +326,17 @@ img.side-deco-right{
 iframe.spotify{
 	width: 280px;
 	height: 100vh;
+	border: none;
+}
+
+.spotify-btn button{
+	width: 200px;
+	height: 80px;
+	border: 3px solid #fff;
+	background-color: #1498f0;
+}
+.spotify-btn button img{
+	height: 60px;
 }
 .exclusive-btn button{
 	width: 200px;
@@ -415,6 +411,13 @@ iframe.spotify{
 	box-shadow: 0px 10px 18px 0px #414141;
 }
 
+h2.sign{
+	font-family: 'Nothing You Could Do', cursive; 
+	position: relative;
+	bottom: 50px;
+	left: 100px;
+	color: #fff;
+}
 /*==============CONTACT===========*/
 input{
 	height: 40px;
